@@ -1,0 +1,51 @@
+[
+  {
+    "prompt": "Build CRM app with login and dashboard",
+    "type": "normal"
+  },
+
+  {
+    "prompt": "Build ecommerce app with payments",
+    "type": "normal"
+  },
+
+  {
+    "prompt": "Build social media app",
+    "type": "normal"
+  },
+
+  {
+    "prompt": "Build hospital management app",
+    "type": "normal"
+  },
+
+  {
+    "prompt": "Build a school app",
+    "type": "vague"
+  },
+
+  {
+    "prompt": "Build app without login but authenticated users only",
+    "type": "conflicting"
+  },
+
+  {
+    "prompt": "Build something cool",
+    "type": "vague"
+  },
+
+  {
+    "prompt": "Build app with payments but no users",
+    "type": "conflicting"
+  },
+
+  {
+    "prompt": "Create modern platform",
+    "type": "incomplete"
+  },
+
+  {
+    "prompt": "Build dashboard app",
+    "type": "incomplete"
+  }
+]
