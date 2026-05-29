@@ -1,2 +1,1 @@
-# Ai-App-Compiler
-AI-powered app compiler using FastAPI and Streamlit
+Developed an AI-powered App Compiler using FastAPI and Streamlit capable of generating application architecture, UI schema, database schema, and API schema from natural language prompts with validation, repair engine, runtime simulation, and cloud deployment.
