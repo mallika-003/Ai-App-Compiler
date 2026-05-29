@@ -1,42 +1,19 @@
 import streamlit as st
 import requests
+
 API_URL= "https://ai-app-compiler-7af6.onrender.com/generate"
+
 st.title("AI App Compiler")
 
-prompt = st.text_area("Enter App Idea")
+prompt = st.text_area("Enter your app idea")
 
 if st.button("Generate"):
 
-    response = requests.post(
-        "http://127.0.0.1:8000/generate",
-        json={"prompt": prompt}
-    )
+    with st.spinner("Generating..."):
 
-    data = response.json()
+        response = requests.post(
+            API_URL,
+            json={"prompt": prompt}
+        )
 
-    st.subheader("Intent")
-    st.json(data["intent"])
-
-    st.subheader("Architecture")
-    st.json(data["architecture"])
-
-    st.subheader("UI Schema")
-    st.json(data["ui_schema"])
-
-    st.subheader("Database Schema")
-    st.json(data["db_schema"])
-
-    st.subheader("API Schema")
-    st.json(data["api_schema"])
-
-    st.subheader("Runtime Output")
-    st.json(data["runtime_output"])
-
-    st.subheader("Errors")
-    st.json(data["errors"])
-    st.subheader("System Metrics")
-    st.write({
-    "Requests Processed": 10,
-    "Validation Failures": 2,
-    "Repairs": 2
-})
+        st.json(response.json())
