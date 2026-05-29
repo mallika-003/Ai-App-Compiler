@@ -1,6 +1,6 @@
 import streamlit as st
 import requests
-
+API_URL= "https://ai-app-compiler-7af6.onrender.com/generate"
 st.title("AI App Compiler")
 
 prompt = st.text_area("Enter App Idea")
